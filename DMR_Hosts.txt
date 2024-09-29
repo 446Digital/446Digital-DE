@@ -1,5 +1,4 @@
 BM_446Digital		2626	446digital.de			passw0rd	62031
-BM_Bayern		2628	dmr446.ddnss.de			passw0rd	62031
 BM_SDRMKK		0000	sdr-mkk.de			passw0rd	62031
 FreeDMR_446Digital	0000	446digital.de			passw0rd	62031
 FreeDMR_Bremen		2623	127.0.0.1			passw0rd	62031
