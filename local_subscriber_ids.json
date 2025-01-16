@@ -4,5 +4,6 @@
   {"id":"2653680","callsign":"D08FKK","fname":"Kai","name":"-","city":"Hain-Gruendau","dept":"63584","land":"6","state":"Hessen","country":"Germany","remarks":"OpenDMR"},
   {"id":"2651988","callsign":"FR3FMA","fname":"Mirko","name":"-","city":"Varel","dept":"26316","land":"8","state":"Niedersachsen","country":"Germany","remarks":"OpenDMR"},
   {"id":"2651788","callsign":"FR3PWA","fname":"Wolfgang, Jever","name":"Wolfgang","city":"Jever","dept":"26441","land":"8","state":"Niedersachsen","country":"Germany","remarks":"OpenDMR"},
+  {"id":"2653166","callsign":"13MAD86","fname":"Martin","name":"-","city":"-","dept":"-","land":"6","state":"H-","country":"Germany","remarks":"OpenDMR"},
 ]
 }
