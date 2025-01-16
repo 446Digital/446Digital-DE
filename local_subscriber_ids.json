@@ -1,7 +1,8 @@
-{"count": 4,"results": [
+{"count": 5,"results": [
   {"id":"2653190","callsign":"D06FTH","fname":"Tobias","name":"Härtel","city":"Rodenbach","dept":"63517","land":"6","state":"Hessen","country":"Germany","remarks":"OpenDMR"},
   {"id":"2653149","callsign":"D09FLW","fname":"Lea","name":"Weigelt-Bittner","city":"Rodenbach","dept":"63517","land":"6","state":"Hessen","country":"Germany","remarks":"OpenDMR"},
-  {"id":"2653680","callsign":"D08FKK","fname":"Kai","name":"Kalden","city":"Hain-Gruendau","dept":"63584","land":"6","state":"Hessen","country":"Germany","remarks":"OpenDMR"},
-  {"id":"2651990","callsign":"WH3CBA","fname":"Benny","name":"-","city":"Wilhelmshaven","dept":"00000","land":"6","state":"Niedersachsen","country":"Germany","remarks":"OpenDMR"},
+  {"id":"2653680","callsign":"D08FKK","fname":"Kai","name":"-","city":"Hain-Gruendau","dept":"63584","land":"6","state":"Hessen","country":"Germany","remarks":"OpenDMR"},
+  {"id":"2651988","callsign":"FR3FMA","fname":"Mirko","name":"-","city":"Varel","dept":"26316","land":"8","state":"Niedersachsen","country":"Germany","remarks":"OpenDMR"},
+  {"id":"2651788","callsign":"FR3PWA","fname":"Wolfgang, Jever","name":"Wolfgang","city":"Jever","dept":"26441","land":"8","state":"Niedersachsen","country":"Germany","remarks":"OpenDMR"},
 ]
 }
