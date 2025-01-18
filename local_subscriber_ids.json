@@ -3,7 +3,9 @@
   {"id":"2653149","callsign":"D09FLW","fname":"Lea","name":"Weigelt-Bittner","city":"Rodenbach","dept":"63517","land":"6","state":"Hessen","country":"Germany","remarks":"OpenDMR"},
   {"id":"2653680","callsign":"D08FKK","fname":"Kai","name":"-","city":"Hain-Gruendau","dept":"63584","land":"6","state":"Hessen","country":"Germany","remarks":"OpenDMR"},
   {"id":"2651988","callsign":"FR3FMA","fname":"Mirko","name":"-","city":"Varel","dept":"26316","land":"8","state":"Niedersachsen","country":"Germany","remarks":"OpenDMR"},
-  {"id":"2651788","callsign":"FR3PWA","fname":"Wolfgang, Jever","name":"Wolfgang","city":"Jever","dept":"26441","land":"8","state":"Niedersachsen","country":"Germany","remarks":"OpenDMR"},
+  {"id":"2651788","callsign":"FR3PWA","fname":"Wolfgang","name":"Wolfgang","city":"Jever","dept":"26441","land":"8","state":"Niedersachsen","country":"Germany","remarks":"OpenDMR"},
+  {"id":"2651990","callsign":"WH3CBA","fname":"Benny","name":"Benny","city":"Wilhelmshaven","dept":"26382","land":"8","state":"Niedersachsen","country":"Germany","remarks":"OpenDMR"},
   {"id":"2653166","callsign":"13MAD86","fname":"Martin","name":"-","city":"-","dept":"-","land":"6","state":"H-","country":"Germany","remarks":"OpenDMR"},
+  {"id":"2654024","callsign":"13MG87","fname":"Martin","name":"-","city":"Nienburg-","dept":"-","land":"8","state":"H-","country":"Germany","remarks":"OpenDMR"},
 ]
 }
