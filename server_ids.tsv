@@ -1,11 +1,11 @@
-DE-NSL_Server	262301	212.227.102.77	passw0rd	62031
-DE-Bremen	2623	dmr446-nds-hb.ddnss.de	RegisterID	62031
-DE-N8schicht	2624	dmr.die-n8schicht.de	RegisterID	62031
-DE-Hessen	2626	opendmr.de	passw0rd	62031
-DE_MKK_Hessen	26267	212.2327.102.12	passw0rd	62031
-DE-Bayern	2628	dmr446.ddnss.de	RegisterID	62031
-DE-Sachsen/Thüringen	2629	freedmr.funkerportal.de	RegisterID	62031
-DE-OWL	2634	freedmr-owl.net	RegisterID	62031
-Ireland	2721	omcicomputerservices.com	passw0rd	62031
-Ungarn	2161	freedmr.hu	RegisterID	62031
-Fankreich	5962	f62dmr.fr	passw0rd	55555
+DE-NSL_Server,262301,212.227.102.77,passw0rd,62031
+DE-Bremen,2623,dmr446-nds-hb.ddnss.de,RegisterID,62031
+DE-N8schicht,2624,dmr.die-n8schicht.de,RegisterID,62031
+DE-Hessen,2626,opendmr.de,passw0rd,62031
+DE_MKK_Hessen,26267,212.2327.102.12,passw0rd,62031
+DE-Bayern,2628,dmr446.ddnss.de,RegisterID,62031
+DE-Sachsen/Thüringen,2629,freedmr.funkerportal.de,RegisterID,62031
+DE-OWL,2634,freedmr-owl.net,RegisterID,62031
+Ireland,2721,omcicomputerservices.com,passw0rd,62031
+Ungarn,2161,freedmr.hu,RegisterID,62031
+Fankreich,5962,f62dmr.fr,passw0rd,55555
