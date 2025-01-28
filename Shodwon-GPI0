@@ -4,8 +4,8 @@ Mit dem GPIO-Pin (Pin 10 auf dem Raspberry Pi Zero 2 W, auch bekannt als GPIO15)
 Du benötigst die Python-Bibliothek RPi.GPIO oder gpiozero, um mit den GPIO-Pins zu arbeiten.
 
 bash
-Kopieren
-Bearbeiten
+ 
+
 sudo apt update
 sudo apt install python3-rpi.gpio
 2. Python-Skript erstellen
@@ -13,8 +13,8 @@ Erstelle ein Python-Skript, das auf den GPIO-Pin lauscht und den Shutdown-Befehl
 
 Beispielskript:
 python
-Kopieren
-Bearbeiten
+ 
+
 import RPi.GPIO as GPIO
 import os
 import time
@@ -44,8 +44,8 @@ finally:
 Speichere das Skript, z. B. als shutdown_on_signal.py, und mache es ausführbar:
 
 bash
-Kopieren
-Bearbeiten
+ 
+
 chmod +x shutdown_on_signal.py
 4. Skript automatisch starten (optional)
 Damit das Skript beim Systemstart läuft, kannst du es in die rc.local oder als Systemd-Dienst eintragen.
@@ -54,15 +54,15 @@ Option 1: rc.local verwenden
 Füge in /etc/rc.local vor exit 0 folgendes hinzu:
 
 bash
-Kopieren
-Bearbeiten
+
+
 python3 /pfad/zum/skript/shutdown_on_signal.py &
 Option 2: Systemd-Dienst erstellen
 Erstelle eine neue Datei /etc/systemd/system/shutdown_on_signal.service:
 
 ini
-Kopieren
-Bearbeiten
+ 
+
 [Unit]
 Description=Shutdown on GPIO Signal
 After=multi-user.target
@@ -77,8 +77,8 @@ WantedBy=multi-user.target
 Aktiviere den Dienst:
 
 bash
-Kopieren
-Bearbeiten
+ 
+
 sudo systemctl enable shutdown_on_signal.service
 sudo systemctl start shutdown_on_signal.service
 5. Signalquelle anschließen
