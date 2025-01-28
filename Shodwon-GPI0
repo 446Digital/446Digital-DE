@@ -1,0 +1,88 @@
+Mit dem GPIO-Pin (Pin 10 auf dem Raspberry Pi Zero 2 W, auch bekannt als GPIO15) kannst du ein Signal überwachen und ein Herunterfahren auslösen. Hier ist eine Schritt-für-Schritt-Anleitung:
+
+1. GPIO-Bibliothek installieren
+Du benötigst die Python-Bibliothek RPi.GPIO oder gpiozero, um mit den GPIO-Pins zu arbeiten.
+
+bash
+Kopieren
+Bearbeiten
+sudo apt update
+sudo apt install python3-rpi.gpio
+2. Python-Skript erstellen
+Erstelle ein Python-Skript, das auf den GPIO-Pin lauscht und den Shutdown-Befehl ausführt.
+
+Beispielskript:
+python
+Kopieren
+Bearbeiten
+import RPi.GPIO as GPIO
+import os
+import time
+
+# GPIO-Pin festlegen (Pin 10 ist GPIO15)
+GPIO_PIN = 15
+
+# GPIO-Modus und Pin einrichten
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(GPIO_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+
+print("Warte auf Signal...")
+
+try:
+    while True:
+        # Überprüfen, ob ein Signal (HIGH) anliegt
+        if GPIO.input(GPIO_PIN) == GPIO.HIGH:
+            print("Signal erkannt! Fahre herunter...")
+            os.system("sudo shutdown now")
+            break
+        time.sleep(0.1)  # Kurze Pause, um CPU-Auslastung zu vermeiden
+except KeyboardInterrupt:
+    print("Beende Programm...")
+finally:
+    GPIO.cleanup()
+3. Skript ausführbar machen
+Speichere das Skript, z. B. als shutdown_on_signal.py, und mache es ausführbar:
+
+bash
+Kopieren
+Bearbeiten
+chmod +x shutdown_on_signal.py
+4. Skript automatisch starten (optional)
+Damit das Skript beim Systemstart läuft, kannst du es in die rc.local oder als Systemd-Dienst eintragen.
+
+Option 1: rc.local verwenden
+Füge in /etc/rc.local vor exit 0 folgendes hinzu:
+
+bash
+Kopieren
+Bearbeiten
+python3 /pfad/zum/skript/shutdown_on_signal.py &
+Option 2: Systemd-Dienst erstellen
+Erstelle eine neue Datei /etc/systemd/system/shutdown_on_signal.service:
+
+ini
+Kopieren
+Bearbeiten
+[Unit]
+Description=Shutdown on GPIO Signal
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /pfad/zum/skript/shutdown_on_signal.py
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+Aktiviere den Dienst:
+
+bash
+Kopieren
+Bearbeiten
+sudo systemctl enable shutdown_on_signal.service
+sudo systemctl start shutdown_on_signal.service
+5. Signalquelle anschließen
+Schließe die Signalquelle (z. B. einen Schalter oder ein anderes Gerät) an den GPIO15 (Pin 10) und GND an.
+
+6. Testen
+Sende ein Signal an den GPIO15 (HIGH), und das Raspberry Pi sollte herunterfahren.
