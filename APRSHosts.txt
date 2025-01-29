@@ -3,6 +3,5 @@ euro.aprs2.net:14580;Universal connection for servers in Europe
 ######### FreeDMR non Lizenz ################
 cbaprs.dyndns.org:14580;APRS CBARPS DE
 cbaprs.at:14580; CBARPS AT
-sdr-mkk.de:14580; SDR-MKK ARPS
 aprs.to:14580; N2RWE APRS RealTime-Map
-# Aktualisiert am 14-09-24 von D06FTH
+# Aktualisiert am 29-02-25 von D06FTH
